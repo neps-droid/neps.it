@@ -1,0 +1,423 @@
+
+<!--
+Cose da fare :
+- Allargare leggermente le card abbonamento da cellulare
+- Centrare prezzo abbonamento da cellulare
+- Centrare scritta informazioni nei bottoni abbonamento
+- Verificare descrizioni abbonamenti
+- Verificare item per ogni abbonamento. (devono essere fatti molto bene)
+- Rendere responsive il form finale in basic-website.html (dove utente scrive preferenze)
+- Sistemare tutta situazione Login / Registrazione
+- Inserire una DashBoard per utente
+-
+-
+-
+-->
+<!DOCTYPE html>
+<html style="color: #212121;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Neps</title>
+    <link rel="icon" href="assets/img/nepslogo.png" type="image/icon type">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Table-with-Icon-Buy-Button-1.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--  Title Slider Include -->
+    <link href="Title_Slider/titleslider.css" rel="stylesheet">
+    <script src="Title_Slider/titlesliderjs.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <!-- End Title Slider Include -->
+    <style>
+      @font-face { font-family: JuneBug; src: url('font/TESLA.ttf'); }
+      @font-face { font-family: JuneBug2; src: url('font/rc.ttf'); }
+      @font-face { font-family: JuneBug3; src: url('font/app.ttf'); }
+      @font-face { font-family: JuneBug4; src: url('trajan pro.ttf'); }
+      #tesla {font-family: JuneBug;}
+      #tt{font-family: JuneBug2;}
+      #sku{font-family: JuneBug3;}
+      #skusku{font-family: JuneBug4;}
+    </style>
+    <!--<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="tooplate-style.css">
+    <script src="login.js"></script>
+</head>
+<body id="page-top">
+    <script> AOS.init();</script>
+    <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top" id="mainNav" style="opacity: 1;background-color: #000000;">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#" style="color: rgb(101,101,101);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a><button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarResponsive"
+                type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto main-nav">
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger cool-link" href="#abbonamenti" style="color: grey;"><span id="tt" style="font-weight:bold;">ABBONAMENTI</span></a></li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger cool-link" href="#servizi" style="color: grey;"><span id="tt" style="font-weight:bold;">METODO</span></a></li>
+                    <!--<li class="nav-item nav-link js-scroll-trigger cd-signin" role="presentation"><a class="nav-link js-scroll-trigger cool-link" href="#" style="color: #a3a3a3;">LOGIN</a></li>-->
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger cool-link" href="contact.html" style="color: grey;"><span id="tt" style="font-weight:bold;">CONTATTI</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+            <!-- VIDEO  -->
+            <video poster="fireHDD.mp4" id="bgvid" style="z-index: 0;" playsinline autoplay muted loop>
+                    <source src="fireHDD.mp4" type="video/mp4">
+                </video>
+                <!--  FINE VIDEO   -->
+    <header class="masthead" style="background-color: #000000;">
+
+        <div class="intro-body" style="background-color: #000000;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                          <!-- Options headline effects: .rotate | .slide | .zoom | .push | .clip -->
+                          <section class="hero-section hero-section--image clearfix clip">
+                              <div class="hero-section__wrap">
+                                  <!-- .hero-section__option -->
+                                  <div class="container">
+                                      <div class="row">
+                                          <div class="offset-lg-2 col-lg-8">
+                                              <div class="title-01 title-01--11 text-center">
+                                                  <h2 class="title__heading" style="padding:0px;">
+                                                      <!--<span id="tt" style="color:#a3a3a3">Siamo</span><br>--><br><br>
+                                                      <strong class="hero-section__words">
+                                                          <span class="title__effect is-visible" id="tt" style="color:#a3a3a3"><span style="color:#009246;">Inn</span><span style="color:white;">ovat</span><span style="color:#ce2a37;">ivo</span></span>
+                                                          <span class="title__effect" id="tt" style="color:#a3a3a3">Premium</span>
+                                                          <span class="title__effect" id="tesla" style="color:#a3a3a3">Neps</span> <!-- mettere noi siamo -->
+                                                      </strong>
+                                                  </h2>
+                                                  <!-- Options btn color: .btn-success | .btn-info | .btn-warning | .btn-danger | .btn-primary -->
+                                              </div> <!-- .title-01 -->
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </section>
+                            <div class="title__description" style="color:white;font-size:1.2rem;opacity: 0.8">Siamo la <strong style ="color:white;">migliore scelta</strong> per le attività di <strong style ="color:white;">piccole e medie </strong> dimensioni. Ci occupiamo della progettazione di <strong style="color:white;">Siti Web, Gestione Social Media, Posizionamento Google e Design Grafico.</strong></div>
+                        <a class="btn btn-link js-scroll-trigger"role="button" href="#jarvis" style="color: #a3a3a3;margin: 29px;"><span id="tt" style="font-weight:bold;color:white;">Scopri Jarvis</span><br><i class="fa fa-angle-double-down animated"></i></a>
+                        <!-- rendere più visibile (grande, lampeggiante)-->
+                      </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--<a href="jarvis.html">
+    <div id="jarvis" class="container text-center"  style="margin-top: -200px;">
+        <img  src="jarvis.gif" alt="">
+        <h2 id ="tt" style="font-weight:bold;color:white;">J A R V I S</h2>
+        <section class="conatiner text-center " style="opacity: 0.6; margin-bottom: 80px" class="container">  <button type="button" class="btn">Usa J.A.R.V.I.S</button> </section>
+    </div></a>-->
+
+
+        <!--  LOGIN A COMPARSA INIZIO CODICE -->
+
+    <!--<div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+    		<!--<div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+
+    			<!--<div id="cd-login"> <!-- log in form -->
+    				<!--<form class="cd-form">
+    					<p class="fieldset">
+    						<label class="image-replace cd-email" for="signin-email">Email</label>
+    						<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="Email">
+    						<span class="cd-error-message">Digita la tua email!</span>
+    					</p>
+
+    					<p class="fieldset">
+    						<label class="image-replace cd-password" for="signin-password">Password</label>
+    						<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+    						<a href="#0" class="hide-password">Hide</a>
+    						<span class="cd-error-message">Inserisci la password</span>
+    					</p>
+
+    					<p class="fieldset">
+    						<input type="checkbox" id="remember-me" checked>
+    						<label for="remember-me">Remember me</label>
+    					</p>
+
+    					<p class="fieldset">
+    						<input class="full-width" type="submit" value="Login">
+    					</p>
+    				</form>
+    				<!-- <a href="#0" class="cd-close-form">Close</a> -->
+    			<!--</div> <!-- cd-login -->
+
+    			<!--<div id="cd-reset-password"> <!-- reset password form -->
+    				<!--<p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+    				<form class="cd-form">
+    					<p class="fieldset">
+    						<label class="image-replace cd-email" for="reset-email">E-mail</label>
+    						<input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+    						<span class="cd-error-message">Error message here!</span>
+    					</p>
+
+    					<p class="fieldset">
+    						<input class="full-width has-padding" type="submit" value="Reset password">
+    					</p>
+    				</form>
+
+    				<p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+    			</div> <!-- cd-reset-password -->
+    			<!--<a href="#0" class="cd-close-form">Close</a>
+    		</div> <!-- cd-user-modal-container -->
+    	<!--</div> <!-- cd-user-modal -->
+
+        <!--  LOGIN A COMPARSA FINE CODICE -->
+
+    <div></div>
+
+
+<script src="script.js"></script>
+    <section class="conatiner content-section text-center " style="background-color: #ededed;padding:40px;" >
+
+      <h2 id="tt" style="color:#a3a3a3;font-weight:bold;">Come Funziona <span id="tesla">NEPS</span></h2>
+      <!--<p class="mast__text2"style="color:#636363;"><strong>Il sistema è pensato per essere intuitivo e veloce.</strong></p>-->
+        <!-- COME FUNZIONA NEPS? -->
+
+                <!--<div class="container tm-pt-5 tm-pb-4">-->   <!-- TOGLIERE DA COMMENTO SE SI VOGLIONO LE CARD PIù PICCOLE-->
+                    <div class="row text-center">
+                        <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article" data-aos="fade-up" data-aos-duration="2000">
+                            <i class="fa tm-fa-6x fa-plus tm-color-primary tm-margin-b-20"></i>
+                            <h3 class="tm-color-primary tm-article-title-1" id="tt" style="color:#636363;font-weight:bold;font-size:1.5rem;">Scegli Abbonamento</h3>
+                            <p style="color:#636363;">Il primo passo è scegliere l'abbonamento più adatto a te. Qui sotto ytroverai 3 abbonamenti base tra cui scegliere, ogni abbonamento offre servizi diversi.
+                            Visualizza la loro scheda tecnica per visualizzarli!</p>
+                        </article>
+                        <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article" data-aos="fade-up" data-aos-duration="2500">
+                            <i class="fa tm-fa-6x fa-cogs tm-color-primary tm-margin-b-20"></i>
+                            <h3 class="tm-color-primary tm-article-title-1" id="tt" style="color:#636363;font-weight:bold;font-size:1.5rem;">Modifica</h3>
+                            <p style="color:#636363;">Qui viene il bello. Se desideri altro oltre ai servizi offerti dall'abbonamento base, potrai modificare il tuo piano inserendone altri, in maniera molto semplice!</p>
+                        </article>
+                        <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article" data-aos="fade-up" data-aos-duration="3000">
+                            <i class="fa tm-fa-6x fa-check tm-color-primary tm-margin-b-20"></i>
+                            <h3 class="tm-color-primary tm-article-title-1" id="tt" style="color:#636363;font-weight:bold;font-size:1.5rem;">Hai finito</h3>
+                            <p style="color:#636363;">Ecco fatto, tutto finito! La nostra squadra procederà a costruire il tuo Abbonamento Mensile, saremo noi a contattart a lavoro completato.</p>
+                        </article>
+                    </div><br>
+
+                    <p class="mast__text2"style="color:#636363;" data-aos="fade-up" data-aos-duration="2000"><strong>Oppure</strong></p>
+
+                    <div class="row text-center">
+                        <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 " data-aos="fade-up" data-aos-duration="2000">
+                        </article>
+                       <a href="jarvis.html"><article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article" data-aos="fade-up" data-aos-duration="3000"><a href="jarvis.html">
+                            <i class="fa tm-fa-6x fa-male tm-color-sec tm-margin-b-20"></i>
+                            <h3 class="tm-color-primary tm-article-title-1" id="tt" style="color:#636363;font-weight:bold;font-size:1.5rem;">Usa Jarvis</h3>
+                            <p style="color:#636363;">Jarvis è l'intelligenza artificiale che ti consiglia l'abbonamento migliore per te! Rispondi solo a qualche sua domanda per sapere qual è l'abbonamento più adatto a te!</p></a>
+                        </article></a>
+                        <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 " data-aos="fade-up" data-aos-duration="3000">
+                        </article>
+                    </div>
+                <!--</div>-->
+    </section>
+
+
+    <section id="abbonamenti" class="content-section carta text-center"  style="background-color: white;padding:10px;">
+      <br>
+      <h2 id="tt" style="color:#a3a3a3;font-weight:bold;">Abbonamenti</h2>
+          <p class="mast__text2" style="color:#636363; margin-bottom: 2%"><strong>Ogni abbonamento è disattivabile semplicemente con un click, senza nessun obbligo e pagamenti aggiuntivi!</strong></p>
+            <div class="container">
+            <div class="row">
+                <a href="basic.html"><div class="col-lg-4" data-aos="fade-up" style ="padding:20px;">
+                  <div class="grid">
+                    <div class="grid__item">
+                            <div class="pricing-table">
+                                    <div class="pricing-option">
+                      <div class=""><img class="card__img" src="assets/img/snow.jpg" alt="Snowy Mountains">
+                        <div class="card__content">
+                          <h1 id="tt" style="font-weight:bold;" class="card__header">Basic</h1>
+                          <p class="card__text">Ottieni un sito web "Vetrina", statico, della tua attività.<br><br></p> <!-- NON METTIAMO ITERAZIONI CON DB-->
+                          <div class="price">
+                                <div class="front">
+                                    <span class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15,98 <b style="	vertical-align: super;   font-size: 50%;">€ / Mese</b></span>
+                                </div>
+                                <div class="back">
+                                    <a href="basic.html"><button class="button card__btn">Scegli <span>&rarr;</span></button></a>
+                                </div>
+                            </div>
+                            </div></div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                </div></a>
+              <a href="premium.html"><div class="col-lg-4" data-aos="fade-up" style ="padding:20px;">
+                <div class="grid">
+                  <div class="grid__item">
+                      <div class="pricing-table">
+                        <div class="pricing-option">
+                    <div class=""><img class="card__img" src="assets/img/stars.jpg" alt="Snowy Mountains">
+                      <div class="card__content">
+                        <h1 id="tt" style="font-weight:bold;" class="card__header">Premium</h1>
+                        <p class="card__text">Migliora e Amplia la tua attività con un sito web dinamico professionale <strong>semplice</strong> ed <strong>intuitivo.</strong></p> <!-- Se richiesto usiamo DB -->
+
+                            <div class="price">
+                                <div class="front">
+                                    <span class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;19,98 <b style="	vertical-align: super;   font-size: 50%;">€ / Mese</b></span>
+                                </div>
+                                <div class="back">
+                                        <a href="premium.html"><button class="button card__btn">Scegli <span>&rarr;</span></button></a>
+                                </div>
+                            </div>
+                            </div></div>
+                    </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></a>
+              <a href="eCommerce.html"><div class="col-lg-4" data-aos="fade-up" style ="padding:20px;">
+                <div class="grid">
+                  <div class="grid__item">
+                    <div class="pricing-table">
+                      <div class="pricing-option">
+                        <div class=""><img class="card__img" src="assets/img/sea.jpg" alt="Snowy Mountains">
+                          <div class="card__content">
+                            <h1 id="tt" style="font-weight:bold;"class="card__header">Ecommerce</h1>
+                            <p class="card__text">Aumenta le tue <strong>vendite</strong> possedendo un <strong>negozio online</strong> con illimitati prodotti.</p> <!-- Sito eCommerce con DB -->
+                            <div class="price">
+                              <div class="front">
+                                <span class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;39,98 <b style="	vertical-align: super;   font-size: 50%;">€ / Mese</b></span>
+                              </div>
+                              <div class="back">
+                                <a href="eCommerce.html"><button class="button card__btn">Scegli <span>&rarr;</span></button></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></a><br>
+              </div>
+            </div>
+          </section>
+
+
+    <!-- JARVIS SECTION -->
+    <div id="jarvis" class="container text-center"  style="margin-top: 50px;">
+        <h2 id ="tt" style="font-weight:bold;color:white;">J A R V I S</h2>
+        <img  src="jarvis2.gif" alt="">
+        <p style="color:white;font-weight : bold;">Ti posso aiutare nella creazione dell'abbonamento perfetto per te!</p>
+
+        <div onclick="window.location='jarvis.html';" class="buttonn buttonn-3" id="btn">
+              <div id="circle"></div>
+              <a id="tt" style="font-weight:bold;font-size:15px;">Andiamo</a>
+            </div>
+
+    </div>
+
+    <style>
+        .buttonn {
+              display: inline-flex;
+              height: 40px;
+              width: 150px;
+              border: 2px solid #BFC0C0;
+              margin: 20px 20px 20px 20px;
+              color: #BFC0C0;
+              text-transform: uppercase;
+              text-decoration: none;
+              font-size: .8em;
+              letter-spacing: 1.5px;
+              align-items: center;
+              justify-content: center;
+              overflow: hidden;
+            }
+
+            a {
+              color: #BFC0C0;
+              text-decoration: none;
+              letter-spacing: 1px;
+            }
+
+            .buttonn-3 {
+              position: relative;
+              overflow: hidden;
+              cursor: pointer;
+            }
+
+            .buttonn-3 a {
+              position: relative;
+              transition: all .45s ease-Out;
+            }
+
+            #circle {
+              width: 0%;
+              height: 0%;
+              opacity: 0;
+              line-height: 40px;
+              border-radius: 50%;
+              background: #BFC0C0;
+              position: absolute;
+              transition: all .5s ease-Out;
+              top: 20px;
+              left: 70px;
+            }
+
+            .buttonn-3:hover #circle {
+              width: 200%;
+              height: 500%;
+              opacity: 1;
+              top: -70px;
+              left: -70px;
+            }
+
+            .buttonn-3:hover a {
+              color: #2D3142;
+            }
+    </style>
+
+    <!-- FINE JARVIS SECTION-->
+
+
+    <section id="servizi" class="conatiner content-section text-center" style="background-color: black;padding:40px;" >
+      <h2 id="tt" style="color:#a3a3a3; font-size:2.2rem;font-weight:bold;">Metodo di lavoro <span id="tesla">NEPS</span></h2>
+      <p class="mast__text1"style="color:#a3a3a3;font-family:"Cutive Mono", monospace;">Il <strong style="color:white;">tuo successo</strong> è il nostro successo.</p><br>
+        <section id="fade1" class="mast" style="padding:0px;" data-aos="fade-up" data-aos-id="fade1">
+            <main>
+              <header class="mast__header">
+                <h1 class="mast__title1 js-spanize" id="tt" align="left" style="color:white;font-weight:bold; font-size:2.2rem;">Affidabile</h1>
+                <hr class="sep"/>
+                <p class="mast__text1 js-spanize" style="color:white;">Ci impegniamo sempre per garantire un prodotto funzionale che rispecchi le necessità del cliente.</p>
+              </header><br><br><br>
+            </main>
+        </section>
+
+        <section id="fade2" class="mast" style="padding:30px;" data-aos="fade-up" data-aos-id="fade2">
+            <main>
+              <header class="mast__header">
+                <h1 class="mast__title2 js-spanize" id="tt" align="left" style="color:white;font-weight:bold; font-size:2.2rem;">Innovativo</h1>
+                <hr class="sep"/>
+                <p class="mast__text2 js-spanize" style="color:white;">Utilizziamo le migliori tecnologie in ambito Web Design per fornire un'esperienza unica e sicura.</p>
+              </header><br><br><br>
+            </main>
+        </section>
+
+        <section id="fade3" class="mast" style="padding:0px;" data-aos="fade-up" data-aos-id="fade3">
+            <main>
+              <header class="mast__header">
+                <h1 class="mast__title3 js-spanize" id="tt" align="left" style="color:#a3a3a3;font-weight:bold; font-size:2.2rem;">Trasparenza</h1>
+                <hr class="sep"/>
+                <p class="mast__text3 js-spanize" style="color:white;">La nostra politica di prezzo è chiara e trasparente, il prezzo rimane bloccato per sempre!</p>
+              </header><br><br><br><br>
+            </main>
+        </section>
+</section>
+
+    <footer style="background-color: black;">
+        <div class="container text-center" style="color: white;">
+            <p>Copyright 2019 © Neps Company<br><strong>neps-company@neps.it</strong></p>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/grayscale.js"></script>
+</body>
+
+</html>

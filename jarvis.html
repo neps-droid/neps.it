@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Neps</title>
+    <link rel="icon" href="assets/img/nepslogo.png" type="image/icon type">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Table-with-Icon-Buy-Button-1.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Table-with-Icon-Buy-Button.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+<link rel="stylesheet" href="path/to/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <style>
+      @font-face { font-family: JuneBug; src: url('font/TESLA.ttf'); }
+      @font-face { font-family: JuneBug2; src: url('font/rc.ttf'); }
+      @font-face { font-family: JuneBug3; src: url('trajan pro.ttf'); }
+      #tesla {font-family: JuneBug;}
+      #tt{font-family: JuneBug2;}
+      #sku{font-family: JuneBug3;}
+
+    </style>
+</head>
+<body id="page-top">
+  <script>
+  mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));
+</script>
+    <script> AOS.init();</script>
+    <nav  class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top" id="mainNav" style="opacity: 1; background-color: #000000 !important;">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="index.html" style="color: rgb(101,101,101);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a><button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarResponsive"
+                type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li id="tt"class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger cool-link" href="#" style="color: #a3a3a3;font-weight:bold;">JARVIS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<script src="jarvis.js"></script>
+<section  class="text-center"  style="background-color: rgb(0, 0, 0);padding:10px; "><br><br><br><br>
+  <!-- VIDEO  -->
+  <video poster="fireHDD.mp4" id="bgvid" style="z-index: 0;" playsinline autoplay muted loop>
+          <source src="fireHDD.mp4" type="video/mp4">
+      </video>
+      <!--  FINE VIDEO   -->
+    <div class="container">
+
+        <form action="">
+
+            <img src="parlajarvis.gif"  id="parla" style=" width: 100%; min-width: 320px; max-width: 620px; height: auto" alt="">
+            <img data-aos="fade" data-aos-duration="3000" src="transizionejarvis.gif" id="transizione" style=" width: 100%; min-width: 320px;  max-width: 620px; height: auto;" alt="">
+            <img data-aos="fade" data-aos-duration="3000" src="aspettajarvis.gif" id="aspetta" style=" width: 100%; min-width: 320px;  max-width: 620px; height: auto;" alt="">
+            <section>
+            <p style="color:#a3a3a3;font-size:1.7rem;font-weight:bold;" id="tt" data-aos="fade" data-aos-duration="3000"> J A R V I S </p>
+            <p style="color:#a3a3a3;font-size:1.3rem;font-family: JuneBug3;font-weight:bold;" data-aos="fade" data-aos-duration="1500" id="txt"></p>
+            <hr data-aos="fade" data-aos-duration="3000" style="width:6em;" class="sep3"/>
+
+
+
+            <div id="primadomanda" style="color: white;">
+                <div class="options">
+                  <input value="prima_1" name="domanda_uno" type="radio" id="creazione" class="hide">
+                  <label for="creazione">Negozio Pubblico</label><br>
+
+                  <input value="prima_2" name="domanda_uno" type="radio" id="miglioramento" class="hide">
+                  <label for="miglioramento">Negozio con vendita Online</label><br>
+
+                  <input value="prima_3" name="domanda_uno" type="radio" id="revisione" class="hide">
+                  <label for="revisione">Attività Produttive</label><br>
+                </div>
+
+            </div>
+
+            <div id="secondadomanda" style="color: white;">
+                <div class="options">
+                  <input value="seconda_1" name="domanda_due" type="radio" id="negpubblico" class="hide">
+                  <label for="negpubblico">Molto Importante</label><br>
+
+                  <input value="seconda_2" name="domanda_due" type="radio" id="negonline" class="hide">
+                  <label for="negonline">Abbastanza Importante</label><br>
+
+                  <input value="seconda_3" name="domanda_due" type="radio" id="attproduttive" class="hide">
+                  <label for="attproduttive">Non ha Importanza</label><br>
+                </div>
+            </div>
+
+            <div id="terzadomanda" style="color: white;">
+                    <div class="options">
+                      <input value="terza_1" name="domanda_tre" type="radio" id="mimportante" class="hide">
+                      <label for="mimportante">Molto Importante</label><br>
+
+                      <input value="terza_2" name="domanda_tre" type="radio" id="aimportante" class="hide">
+                      <label for="aimportante">Abbastanza Importante</label><br>
+
+                      <input value="terza_3" name="domanda_tre" type="radio" id="nimportante" class="hide">
+                      <label for="nimportante">Non ha Importanza</label><br>
+                    </div>
+            </div>
+            <div id="quartadomanda" style="color: white;">
+                <div class="options">
+                  <input value="quarta_1" name="domanda_quattro" type="radio" id="giornalmente" class="hide">
+                  <label for="giornalmente">Giornalmente</label><br>
+
+                  <input value="quarta_2" name="domanda_quattro" type="radio" id="mensilmente" class="hide">
+                  <label for="mensilmente">Mensilmente</label><br>
+
+                  <input value="quarta_3" name="domanda_quattro" type="radio" id="ognitanto" class="hide">
+                  <label for="ognitanto">Ogni Tanto</label><br>
+
+                  <input value="quarta_4" name="domanda_quattro" type="radio" id="mai" class="hide">
+                  <label for="mai">Mai</label><br>
+                </div>
+            </div>
+
+            <div id="quintadomanda" style="color: white;">
+                <div class="options">
+                  <input value="quinta_1" name="domanda_cinque" type="radio" id="moltoimportantt" class="hide">
+                  <label for="moltoimportantt">Molto Importante</label><br>
+
+                  <input value="quinta_2" name="domanda_cinque" type="radio" id="nonhaimppp" class="hide">
+                  <label for="nonhaimppp">Non ha Importanza</label><br>
+                </div>
+            </div>
+
+            <style>
+
+            /* RADIO */
+
+             .options {
+            	 color: white;
+            	 text-align: center;
+            }
+             .options input {
+            	 display: none;
+            }
+             .options > label {
+            	 display: inline-block;
+            	 position: relative;
+            	 padding-left: 24px;
+            	 cursor: pointer;
+            }
+             .options > label:before {
+            	 content: "";
+            	 display: block;
+            	 position: absolute;
+            	 width: 16px;
+            	 height: 16px;
+            	 left: 0;
+            	 top: 50%;
+            	 margin-top: -8px;
+            	 border: 1px solid #fff;
+            	 border-radius: 8px;
+            }
+             .options > label:after {
+            	 content: "";
+            	 display: block;
+            	 position: absolute;
+            	 width: 0;
+            	 height: 0;
+            	 top: 50%;
+            	 left: 8px;
+            	 margin-top: 0;
+            	 background: #fff;
+            	 border-radius: 4px;
+            	 transition: 0.2s ease-in-out;
+            }
+             .options :checked + label:after {
+            	 height: 8px;
+            	 width: 8px;
+            	 margin-top: -4px;
+            	 left: 4px;
+            }
+
+            /* FINE RADIO */
+
+
+            .buttonn {
+              display: inline-flex;
+              height: 40px;
+              width: 150px;
+              border: 2px solid #BFC0C0;
+              margin: 20px 20px 20px 20px;
+              color: #BFC0C0;
+              text-transform: uppercase;
+              text-decoration: none;
+              font-size: .8em;
+              letter-spacing: 1.5px;
+              align-items: center;
+              justify-content: center;
+              overflow: hidden;
+            }
+
+            a {
+              color: #BFC0C0;
+              text-decoration: none;
+              letter-spacing: 1px;
+            }
+
+            .buttonn-3 {
+              position: relative;
+              overflow: hidden;
+              cursor: pointer;
+            }
+
+            .buttonn-3 a {
+              position: relative;
+              transition: all .45s ease-Out;
+            }
+
+            #circle {
+              width: 0%;
+              height: 0%;
+              opacity: 0;
+              line-height: 40px;
+              border-radius: 50%;
+              background: #BFC0C0;
+              position: absolute;
+              transition: all .5s ease-Out;
+              top: 20px;
+              left: 70px;
+            }
+
+            .buttonn-3:hover #circle {
+              width: 200%;
+              height: 500%;
+              opacity: 1;
+              top: -70px;
+              left: -70px;
+            }
+
+            .buttonn-3:hover a {
+              color: #2D3142;
+            }
+
+            </style>
+
+            <!--<button id="btn" type="button" aos="fade-up" type="button">Avanti</button>-->
+            <div class="buttonn buttonn-3" id="btn" onclick="RadioV()">
+              <div id="circle"></div>
+              <a id="sku" style="font-weight:bold;">Avanti</a>
+            </div>
+            <input aos="fade-up" type="submit" id ="invio" value="">
+        </form></section>
+    </div><br><br><br><br><br>
+    </section>
+     <!--<footer style="background-color: black!important;">
+        <div class="container text-center" style="color: white;">
+            <p>Copyright 2019 © Neps Company<br><strong>neps-company@neps.it</strong></p>
+        </div>
+    </footer>-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/grayscale.js"></script><script src="jarvis.js"></script>
+</body>
+</html>
