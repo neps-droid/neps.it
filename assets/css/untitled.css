@@ -1,0 +1,14 @@
+
+
+#mainNav .navbar-brand {
+  background-image: url("../../assets/img/neps.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 92px;
+  height: 21px;
+}
+
+#download {
+  color: rgb(255,255,255);
+  background-color: rgb(255,255,255);
+}
